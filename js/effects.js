@@ -10,7 +10,7 @@ function eff2(){
 
 function eff3(){
     let thingy = document.getElementById("eff1");
-    thingy.innerHTML = thingy.innerHTML === "LunarRatOS"?"":"LunarRatOS";
+    thingy.innerHTML = thingy.innerHTML === "LunarRatOS"?"LunarRatOS (not responding)":"LunarRatOS";
 }
 
 function eff4() {
