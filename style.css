@@ -8,6 +8,7 @@ body {
     width: 100%;
     background: linear-gradient(90deg, #2B6A7E 0%, #85E39E 100%);
     display: flex;
+    top: 0;
     position: fixed;
     align-items: center;
     color: white;
@@ -34,6 +35,14 @@ body {
     opacity: 1;
 }
 
+.emphasis {
+    transition: color 0.25s;
+}
+
+.emphasis:hover {
+    color: #a7fff2;
+}
+
 a {
     cursor: pointer;
     color: inherit;
@@ -50,9 +59,12 @@ a {
     right: 25px;
 }
 
-#linkbuttons > a {
+.w95button {
     box-shadow: inset -2px -2px 0 #858585, inset 2px 2px 0 #FFFFFF;
     background: #babcb2;
+}
+
+#linkbuttons > a {
     height: 50px;
     width: 50px;
     margin-left: 3px;
@@ -63,6 +75,62 @@ a {
     margin: 9px;
 }
 
-#linkbuttons > a:active {
+.w95button:active {
     box-shadow: inset -2px -2px 0 #FFFFFF, inset 2px 2px 0 #858585;
+}
+
+#fakewin {
+    text-align: center;
+    border-bottom: solid 3px grey;
+    border-left: solid 3px grey;
+    border-right: solid 3px #e0e0e0;
+    border-top: solid 3px #e0e0e0;
+    width: 60vw;
+    /*height: 40vh;*/
+    margin: 150px auto;
+    background-size: contain;
+    background: url("im/mintblur.png") no-repeat center;
+    color: white;
+}
+
+#fakewin code {
+    padding: 10px;
+    color: black;
+}
+
+#fakeheader {
+    border-bottom: solid 2px #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    background: linear-gradient(90deg, #095459 0%, #85E39E 100%);
+    padding: 0 4px;
+    font-family: monospace;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#fakebuttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#fakebuttons > *  {
+    width: 24px;
+    height: 24px;
+    margin-left: 2px;
+}
+
+#fakebuttons > * > img {
+    height: 90%;
+}
+
+#fakewin > h1 {
+    text-align: center;
+}
+
+#fakewin > p {
+    padding: 20px;
+    margin: 0;
 }
